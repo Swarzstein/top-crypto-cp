@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <nav>
+          <div className="arrow flex">
+            <div className="backArrow" />
+            <h2>2023</h2>
+          </div>
+          <h1>Crypto Currencies Today</h1>
+          <div className="icons-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25682.png" alt="mic" />
+            <img src="https://cdn-icons-png.flaticon.com/512/3019/3019014.png" alt="settings" />
+          </div>
+        </nav>
       </header>
+      <Home />
     </div>
   );
 }
