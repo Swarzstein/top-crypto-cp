@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import { showDetails } from '../redux/details/details';
 
 export default function Currency(data) {
-  const { currency } = data;
+  const { currency, bg } = data;
   const {
     id, rank, name, symbol, price,
   } = currency;
@@ -20,7 +20,7 @@ export default function Currency(data) {
 
   return (
     <Link to={`/${id}`}>
-      <div role="presentation" className="currency-box" onClick={() => currencyDetails(currency)} id={id}>
+      <div role="presentation" className={`currency-box ${bg}`} onClick={() => currencyDetails(currency)} id={id}>
         <h4>
           #
           {rank}

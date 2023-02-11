@@ -1,37 +1,47 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { FaMicrophone, FaCog } from 'react-icons/fa';
 import Currency from '../components/Currency';
 
 export default function Home() {
   const data = useSelector((state) => state.currencies);
-  // const { currencies } = data;
-  // console.log('Home', currency);
+
   return (
     <>
       <header className="App-header">
         <nav>
           <div className="arrow flex">
             <div className="backArrow" />
-            <h2>2023</h2>
+            <h3>2023</h3>
           </div>
-          <h1>Crypto Currencies Today</h1>
+          <h4>Crypto Currencies Today</h4>
           <div className="icons-container">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25682.png" alt="mic" />
-            <img src="https://cdn-icons-png.flaticon.com/512/3019/3019014.png" alt="settings" />
+            <FaMicrophone />
+            <FaCog />
           </div>
         </nav>
       </header>
       <div className="currencies">
-        <div className="currency-head">
-          <h1>Top 100 Cryptocurrencies</h1>
-        </div>
         {data.map(
-          (currency) => (
-            <Currency
-              key={currency.rank}
-              currency={currency}
-            />
-          ),
+          (currency) => {
+            if (currency.rank % 4 === 1 || currency.rank % 4 === 0) {
+              return (
+                <Currency
+                  key={currency.rank}
+                  currency={currency}
+                  bg="bg1"
+                />
+              );
+            }
+
+            return (
+              <Currency
+                key={currency.rank}
+                currency={currency}
+                bg="bg2"
+              />
+            );
+          },
         )}
       </div>
     </>

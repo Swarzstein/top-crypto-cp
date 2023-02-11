@@ -1,3 +1,8 @@
+body {
+  background-color: #598AE6;
+  color: #fff;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -9,8 +14,8 @@
 }
 
 .App-header {
-  background-color: #4369B2;
-  height: 15vh;
+  background-color: #35548B;
+  height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,10 +29,19 @@
   color: #61dafb;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 nav {
-  width: 100vw;
+  width: 92vw;
   display: flex;
   justify-content: space-around;
+  gap: 1rem;
+  padding: 0 4vw;
+  align-items: center;
 }
 
 .icons-container {
@@ -43,15 +57,16 @@ nav {
 .currencies {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15vh;
+  margin-top: 8vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .currency-details {
-  margin-top: 15vh;
-}
-
-.detail {
-  padding: 0 2rem;
+  margin-top: 8vh;
 }
 
 .currency-box {
@@ -60,14 +75,52 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background-color: #5788E4;
+}
+
+.currency-box * {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.currency-box h2 {
+  align-self: center !important;
+  font-size: xx-large;
+}
+
+.currency-box h4 {
+  align-self: flex-start;
+  margin-left: 1rem;
 }
 
 .currency-box * {
   margin-right: 1rem;
 }
 
+.currency-head {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.currency-head h1{
+  width: 50vw;
+}
+
 .detail {
+  padding: 0 2rem;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bg1 {
+  background-color: #4369B2;
+}
+
+.bg2 {
+  background-color: #5788E4;
 }

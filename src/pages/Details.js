@@ -1,68 +1,77 @@
 import React from 'react';
-// import { useSelector } from 'react-redux';
-import { useLocation } from 'react-router-dom';
-// import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { FaChevronLeft, FaMicrophone, FaCog } from 'react-icons/fa';
 
 export default function Details() {
-  // const currency = useSelector((state) => state.details);
-  const currency = useLocation().state;
-  console.log(currency);
-  /* const { id } = useParams();
-  const keys = Object.keys(currency);
-  const details = keys.map((key) => (
-    <div key={key}>
-      <h3>{key}</h3>
-      <h3>{currency[key]}</h3>
-    </div>
-  )); */
+  let currency = useSelector((state) => state.details);
+  currency = currency === true ? currency : JSON.parse(localStorage.getItem('crypto'));
 
   return (
     <>
       <header className="App-header">
         <nav>
-          <div className="arrow flex">
-            <div className="backArrow" />
-            <h2>2023</h2>
+          <div className="flex">
+            <NavLink to="/"><h2><FaChevronLeft /></h2></NavLink>
+            <h3>2023</h3>
           </div>
-          <h1>Details</h1>
+          <h3>Details</h3>
           <div className="icons-container">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25682.png" alt="mic" />
-            <img src="https://cdn-icons-png.flaticon.com/512/3019/3019014.png" alt="settings" />
+            <FaMicrophone />
+            <FaCog />
           </div>
         </nav>
       </header>
       <div className="currency-details">
-        <div className="detail">
-          <h3>Price</h3>
-          <h3>{currency.priceUsd}</h3>
+        <div className="currency-head">
+          <h2>{currency.symbol}</h2>
+          <h2>{currency.name}</h2>
         </div>
-        <div className="detail">
+        <div className="detail bg1">
+          <h3>Price</h3>
+          <h3>
+            US$
+            {currency.priceUsd}
+          </h3>
+        </div>
+        <div className="detail bg2">
           <h3>Prev. Price</h3>
-          <h3>{currency.vwap24Hr}</h3>
+          <h3>
+            US$
+            {currency.vwap24Hr}
+          </h3>
         </div>
-        <div className="detail">
+        <div className="detail bg1">
           <h3>Change</h3>
-          <h3>{currency.changePercent24Hr}</h3>
+          <h3>
+            {currency.changePercent24Hr}
+            %
+          </h3>
         </div>
-        <div className="detail">
-          <h3>Price</h3>
-          <h3>{currency.priceUsd}</h3>
+        <div className="detail bg2">
+          <h3>Market Cap</h3>
+          <h3>
+            US$
+            {currency.marketCapUsd.slice(0, (currency.marketCapUsd.indexOf('.') + 6))}
+          </h3>
         </div>
-        <div className="detail">
-          <h3>Price</h3>
-          <h3>{currency.priceUsd}</h3>
+        <div className="detail bg1">
+          <h3>Supply</h3>
+          <h3>
+            {currency.symbol}
+            {currency.supply.slice(0, (currency.supply.indexOf('.') + 6))}
+          </h3>
         </div>
-        <div className="detail">
-          <h3>Price</h3>
-          <h3>{currency.priceUsd}</h3>
+        <div className="detail bg2">
+          <h3>Volume</h3>
+          <h3>
+            US$
+            {currency.volumeUsd24Hr.slice(0, (currency.volumeUsd24Hr.indexOf('.') + 6))}
+          </h3>
         </div>
-        <div className="detail">
-          <h3>Price</h3>
-          <h3>{currency.priceUsd}</h3>
-        </div>
-        <div className="detail">
-          <h3>Price</h3>
-          <h3>{currency.priceUsd}</h3>
+        <div className="detail bg1">
+          <h3>More</h3>
+          <h4><a href={currency.explorer}>{currency.explorer}</a></h4>
         </div>
       </div>
     </>
