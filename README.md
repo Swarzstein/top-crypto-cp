@@ -32,7 +32,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Leaderboard App <a name="about-project"></a>
+# 📖 Cryptocurrencies Today <a name="about-project"></a>
 
 **Cryptocurrencies Today** Is a web app that fetches information about the top 100 [Criptocurrencies](pending) built in React.
 
