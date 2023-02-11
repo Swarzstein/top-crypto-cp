@@ -46,6 +46,14 @@ nav {
   margin-top: 15vh;
 }
 
+.currency-details {
+  margin-top: 15vh;
+}
+
+.detail {
+  padding: 0 2rem;
+}
+
 .currency-box {
   width: 50vw;
   height: 50vw;
@@ -57,4 +65,9 @@ nav {
 
 .currency-box * {
   margin-right: 1rem;
+}
+
+.detail {
+  display: flex;
+  justify-content: space-between;
 }
