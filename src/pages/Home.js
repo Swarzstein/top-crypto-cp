@@ -10,8 +10,7 @@ export default function Home() {
     <>
       <header className="App-header">
         <nav>
-          <div className="arrow flex">
-            <div className="backArrow" />
+          <div>
             <h3>2023</h3>
           </div>
           <h4>Crypto Currencies Today</h4>
