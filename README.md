@@ -2,9 +2,6 @@
 
 <div align="center">
 
-  <img src="microverse_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
   <h3><b>Microverse</b></h3>
 
 </div>
@@ -37,7 +34,7 @@
 
 # 📖 Leaderboard App <a name="about-project"></a>
 
-**Space Travelers** Is a website app that fetches information about the [Space Travelers](pending). It's built in React.
+**Cryptocurrencies Today** Is a web app that fetches information about the top 100 [Criptocurrencies](pending) built in React.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,7 +55,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Dynamic content using React**
+- **Set of 100 cryptocurrencies and their individual data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,15 +85,15 @@ and follow these steps.
 Clone this repository to your desired folder:
 
 1. Download the **Zip** file or clone the repo with:
-   `bash git clone git@github.com:gjuliao/Space-Travelers.git`
+   `git clone https://github.com/Swarzstein/top-cripto-cp.git`
 2. To access cloned directory run:
-   `bash cd space-travelers `
+   `cd top-cripto-cp `
 3. Open it with the live server
 
 ### Install
 
 > To install linters and other project's dependencies run:
-> `bash npm install `
+> `npm install `
 
 ### Usage
 
@@ -109,11 +106,11 @@ To run tests, run the following command:
 Test for Linters For tracking linter errors locally you need to follow these steps:
 
 1. For tracking linter errors in HTML files run:
-   `bash npx hint . `
+   `npx hint . `
 2. For tracking linter errors in CSS or SASS files run:
-   `bash npx stylelint "**/*.{css,scss}" `
+   `npx stylelint "**/*.{css,scss}" `
 3. For tracking linter errors in javascript files run:
-   `bash npx eslint . `
+   `npx eslint . `
 
 ### Deployment
 
@@ -126,9 +123,7 @@ You can deploy this project using:
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Juan Zorrilla**
-👤 **Giovanni Juliao**
 
-- GitHub: [@gjuliao](https://github.com/gjuliao)
 - GitHub: [@Swarzstein](https://github.com/Swarzstein/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -137,7 +132,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add navigation bar]**
+- [ ] **[No future features will be added]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +142,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]([../../issues/](https://github.com/gjuliao/Space-Travelers/issues).
+Feel free to check the [issues page]([../../issues/](https://https://github.com/Swarzstein/top-cripto-cp/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,7 +162,7 @@ If you like this project please give us a star!
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank Microverse for making the introduction.
+Original design idea by Nelson Sakwa on Behance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -189,6 +184,6 @@ I would like to thank Microverse for making the introduction.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./license) licensed.
+This project is [MIT](./LICENCE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
