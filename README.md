@@ -63,7 +63,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Space Travelers App](pending)
+- [Live Demo](https://drive.google.com/file/d/1YxVo_DJmcVPy6TmPbWQx7ScBk69y-6A4/view?usp=share_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
