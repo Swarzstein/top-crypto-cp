@@ -13,7 +13,7 @@ export default function Home() {
           <div>
             <h3>2023</h3>
           </div>
-          <h4>Crypto Currencies Today</h4>
+          <h4>Cryptocurrencies Today</h4>
           <div className="icons-container">
             <FaMicrophone />
             <FaCog />
