@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Currency component Currency box renders 1`] = `
+exports[`Details test Details renders correctly 1`] = `
 Array [
   <header
     className="App-header"

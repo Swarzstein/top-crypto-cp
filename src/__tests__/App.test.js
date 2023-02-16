@@ -6,7 +6,7 @@ import App from '../App';
 import store from '../redux/configureStore';
 import '@testing-library/jest-dom';
 
-test('renders learn react link', () => {
+test('renders App', () => {
   render(
     <React.StrictMode>
       <BrowserRouter>

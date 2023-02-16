@@ -5,14 +5,14 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import Details from '../pages/Details';
 import currenciesReducerMock from '../utils/mockCurrenciesReducer';
 
-describe('Currency component', () => {
+describe('Details test', () => {
   const store = configureStore({
     reducer: {
       currencies: currenciesReducerMock,
     },
   });
 
-  it('Currency box renders', () => {
+  it('Details page renders correctly', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
