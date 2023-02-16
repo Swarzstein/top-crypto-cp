@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Currency component Currency box renders 1`] = `
+<a
+  href="/bitcoin"
+  onClick={[Function]}
+>
+  <div
+    className="currency-box undefined"
+    id="bitcoin"
+    role="presentation"
+  >
+    <h4>
+      #
+      1
+    </h4>
+    <h2>
+      BTC
+    </h2>
+    <h3>
+      Bitcoin
+    </h3>
+    <p>
+      21853.4050074236690450
+    </p>
+  </div>
+</a>
+`;

@@ -1,5 +1,15 @@
+@import url('https://fonts.cdnfonts.com/css/gill-sans');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+body {
+  background-color: #598ae6;
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -7,32 +17,113 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #35548b;
+  height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: fixed;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav {
+  width: 92vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 0 4vw;
+  align-items: center;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.icons-container img {
+  height: 1em;
+}
+
+.currencies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8vh;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.currency-details {
+  margin-top: 8vh;
+}
+
+.currency-box {
+  font-family: 'Lato', sans-serif;
+  width: 50vw;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.currency-box * {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-right: 1rem;
+}
+
+.currency-box h2 {
+  align-self: center !important;
+  font-size: xx-large;
+}
+
+.currency-box h4 {
+  align-self: flex-start;
+  margin-left: 1rem;
+}
+
+.currency-head {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.currency-head h1 {
+  width: 50vw;
+}
+
+.detail {
+  padding: 0 2rem;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bg1 {
+  background-color: #4369b2;
+}
+
+.bg2 {
+  background-color: #5788e4;
 }
