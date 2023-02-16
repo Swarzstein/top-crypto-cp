@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/top-cripto-cp/static/css/main.aac982be.css",
-    "main.js": "/top-cripto-cp/static/js/main.3ed20cb6.js",
-    "static/js/787.66cd7540.chunk.js": "/top-cripto-cp/static/js/787.66cd7540.chunk.js",
-    "index.html": "/top-cripto-cp/index.html",
-    "main.aac982be.css.map": "/top-cripto-cp/static/css/main.aac982be.css.map",
-    "main.3ed20cb6.js.map": "/top-cripto-cp/static/js/main.3ed20cb6.js.map",
-    "787.66cd7540.chunk.js.map": "/top-cripto-cp/static/js/787.66cd7540.chunk.js.map"
+    "main.css": "/static/css/main.aac982be.css",
+    "main.js": "/static/js/main.b99a35c3.js",
+    "static/js/787.66cd7540.chunk.js": "/static/js/787.66cd7540.chunk.js",
+    "index.html": "/index.html",
+    "main.aac982be.css.map": "/static/css/main.aac982be.css.map",
+    "main.b99a35c3.js.map": "/static/js/main.b99a35c3.js.map",
+    "787.66cd7540.chunk.js.map": "/static/js/787.66cd7540.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aac982be.css",
-    "static/js/main.3ed20cb6.js"
+    "static/js/main.b99a35c3.js"
   ]
 }
