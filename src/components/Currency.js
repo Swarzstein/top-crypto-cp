@@ -26,7 +26,7 @@ export default function Currency(data) {
         </h4>
         <h2>{symbol}</h2>
         <h3>{name}</h3>
-        <p>{priceUsd}</p>
+        <p>{priceUsd.slice(0, (priceUsd.indexOf('.') + 10))}</p>
       </div>
     </Link>
   );
