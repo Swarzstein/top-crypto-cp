@@ -63,7 +63,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://crypto-currencies-b0dx.onrender.com)
+- [Live Demo](https://crypto-1xp0.onrender.com)
 - [Demo Presentation](https://drive.google.com/file/d/1YxVo_DJmcVPy6TmPbWQx7ScBk69y-6A4/view?usp=share_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
