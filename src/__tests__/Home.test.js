@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import Home from '../pages/home';
+import Home from '../pages/Home';
 import currenciesReducerMock from '../utils/mockCurrenciesReducer';
 
 describe('Currency component', () => {
