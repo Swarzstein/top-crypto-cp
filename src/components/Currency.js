@@ -2,9 +2,9 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 // import { useParams } from 'react-router-dom';
-import { showDetails } from '../redux/details/details';
+//  { showDetails } from '../redux/details/details';
 
 export default function Currency(data) {
   const { currency, bg } = data;
@@ -12,14 +12,14 @@ export default function Currency(data) {
     id, rank, name, symbol, priceUsd,
   } = currency;
   // console.log(currency);
-  const dispatch = useDispatch();
+  /* const dispatch = useDispatch();
   const currencyDetails = (currency) => {
     dispatch(showDetails(currency));
-  };
+  }; */
 
   return (
     <Link to={`/${id}`}>
-      <div role="presentation" className={`currency-box ${bg}`} onClick={() => currencyDetails(currency)} id={id}>
+      <div role="presentation" className={`currency-box ${bg}`} id={id}>
         <h4>
           #
           {rank}

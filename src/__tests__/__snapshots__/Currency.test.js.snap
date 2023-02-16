@@ -8,7 +8,6 @@ exports[`Currency component Currency box renders 1`] = `
   <div
     className="currency-box undefined"
     id="bitcoin"
-    onClick={[Function]}
     role="presentation"
   >
     <h4>
