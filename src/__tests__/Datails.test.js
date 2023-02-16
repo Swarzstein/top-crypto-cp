@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import Home from '../pages/home';
+import Details from '../pages/Details';
 import currenciesReducerMock from '../utils/mockCurrenciesReducer';
 
 describe('Currency component', () => {
@@ -16,9 +16,9 @@ describe('Currency component', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <MemoryRouter initialEntries={['/']}>
+          <MemoryRouter initialEntries={['/bitcoin']}>
             <Routes>
-              <Route index element={<Home />} />
+              <Route path="/:id" element={<Details />} />
             </Routes>
           </MemoryRouter>
         </Provider>,

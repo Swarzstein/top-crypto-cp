@@ -1,12 +1,14 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import { FaChevronLeft, FaMicrophone, FaCog } from 'react-icons/fa';
+// import store from '../redux/configureStore';
+// import { getCrypto } from '../redux/currencies/currencies';
 
 export default function Details() {
-  let currency = useSelector((state) => state.details);
-  currency = currency === true ? currency : JSON.parse(localStorage.getItem('crypto'));
-
+  const currencies = useSelector((state) => state.currencies);
+  const { id } = useParams();
+  const currency = currencies.find((currency) => currency.id === id);
   return (
     <>
       <header className="App-header">

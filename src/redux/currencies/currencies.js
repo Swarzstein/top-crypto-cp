@@ -4,7 +4,10 @@ const GET_CURRENCIES = 'top-cripto-cp/currencies/GET_CURRENCIES';
 
 export default function currenciesReducer(state = [], action) {
   switch (action.type) {
-    case GET_CURRENCIES: return action.currencies.data;
+    case GET_CURRENCIES: {
+      // console.log(action.currencies.data);
+      return action.currencies.data;
+    }
     default: return state;
   }
 }

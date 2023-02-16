@@ -21,7 +21,9 @@ exports[`Currency component Currency box renders 1`] = `
     <h3>
       Bitcoin
     </h3>
-    <p />
+    <p>
+      21853.4050074236690450
+    </p>
   </div>
 </a>
 `;

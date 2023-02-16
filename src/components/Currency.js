@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import propTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -10,7 +9,7 @@ import { showDetails } from '../redux/details/details';
 export default function Currency(data) {
   const { currency, bg } = data;
   const {
-    id, rank, name, symbol, price,
+    id, rank, name, symbol, priceUsd,
   } = currency;
   // console.log(currency);
   const dispatch = useDispatch();
@@ -27,7 +26,7 @@ export default function Currency(data) {
         </h4>
         <h2>{symbol}</h2>
         <h3>{name}</h3>
-        <p>{price}</p>
+        <p>{priceUsd}</p>
       </div>
     </Link>
   );

@@ -32,7 +32,6 @@ export default function Home() {
                 />
               );
             }
-
             return (
               <Currency
                 key={currency.rank}
