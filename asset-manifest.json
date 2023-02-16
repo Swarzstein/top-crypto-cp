@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/top-cripto-cp/static/css/main.aac982be.css",
+    "main.js": "/top-cripto-cp/static/js/main.707ec455.js",
+    "static/js/787.66cd7540.chunk.js": "/top-cripto-cp/static/js/787.66cd7540.chunk.js",
+    "index.html": "/top-cripto-cp/index.html",
+    "main.aac982be.css.map": "/top-cripto-cp/static/css/main.aac982be.css.map",
+    "main.707ec455.js.map": "/top-cripto-cp/static/js/main.707ec455.js.map",
+    "787.66cd7540.chunk.js.map": "/top-cripto-cp/static/js/787.66cd7540.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aac982be.css",
+    "static/js/main.707ec455.js"
+  ]
+}
